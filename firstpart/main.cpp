@@ -160,13 +160,13 @@ int main() {
                t[2], res[4], res[5]\
 
          );*/
-         float replacement=0;
+         float replacement;
          if(replacement>=0.05){
             record=1;
             replacement=0;
          }
          else{
-            replacement+=1/2*sqrt(t[0]*9.8*t[0]*9.8+t[1]*t[1]*9.8*9.8)*0.01;
+            replacement+=1/2*sqrt(t[0]*9.8*t[0]*9.8+t[1]*t[1]*9.8*9.8)*0.1;
     
          }
          result[num++] =  std::to_string(t[0]) + " " + std::to_string(t[1]) + " " + std::to_string(t[2]) + " " + std::to_string(record) + "\r\n";
